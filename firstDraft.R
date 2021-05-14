@@ -1,4 +1,7 @@
 library(dplyr)
+
+# Not sure if stringr is here to stay
+library(stringr)
 floor(runif(1, min = 11111, max = 66666))
 
 tableOneTwo <- tibble(
@@ -83,7 +86,7 @@ getSymbol <- function() {
 # https://stackoverflow.com/a/12539805
 # grepl() won't return logical(0) for false
 checkSymbol <- function(symbol) {
-  qual <- grepl("\\d+", symbol) & grepl("\\W+", symbol) & grepl("[:upper:]+", symbol)
+  qual <- grepl("\\d+", symbol) & grepl("\\W+", symbol) & grepl('[A-Z]+', symbol)
   return(qual)
 }
 
