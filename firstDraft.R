@@ -106,8 +106,8 @@ getPhrase <- function() {
   
   roll <- as.numeric(roll)
   
-  #phrase <- as.character(wordList[which(wordList == roll),2])
-  phrase <- wordList[[which(wordList == roll),2]]
+  phrase <- as.character(wordList[which(wordList == roll),2])
+  #phrase <- wordList[[which(wordList == roll),2]]
   return(phrase) 
 }
 
