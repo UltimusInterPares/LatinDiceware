@@ -1,9 +1,5 @@
 library(dplyr)
 
-# Not sure if stringr is here to stay
-library(stringr)
-floor(runif(1, min = 11111, max = 66666))
-
 tableOneTwo <- tibble(
   .rows = 6,
   c1 = c('A', 'G', 'M', 'S', 'Y', '4'),
@@ -13,7 +9,6 @@ tableOneTwo <- tibble(
   c5 = c('E', 'K', 'Q', 'W', '2', '8'),
   c6 = c('F', 'L', 'R', 'X', '3', '9')
 )
-
 
 # Having two cells map to a space feels sketch
 tableThreeFour <- tibble(
