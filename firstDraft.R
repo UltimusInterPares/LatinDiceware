@@ -83,7 +83,7 @@ getSymbol <- function() {
 # https://stackoverflow.com/a/12539805
 # grepl() won't return logical(0) for false
 checkSymbol <- function(symbol) {
-  qual <- grepl("\\d+", symbol) & grepl("\\W+", symbol)
+  qual <- grepl("\\d+", symbol) & grepl("\\W+", symbol) & grepl("[:upper:]+", symbol)
   return(qual)
 }
 
