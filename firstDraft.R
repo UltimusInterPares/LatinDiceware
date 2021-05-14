@@ -142,9 +142,9 @@ getPhraseLength <- function(passPhrase) {
 
 analyzePhrase <- function(passPhrase, phraseLength) {
   entropy <- (log(95)/log(2))*phraseLength
-  print(c('Your password has ', entropy, ' bits of entropy.'), quote = FALSE)
+  #writeLines(paste('Your password has ', entropy, ' bits of entropy.'))
   friends <- 2^entropy
-  print(c(entropy, ' other possible combinations share this entropy.'), quote = FALSE)
+  #writeLines(paste(entropy, ' other possible combinations share this entropy.'))
 }
 
 Generate <- function(Length = 5){
