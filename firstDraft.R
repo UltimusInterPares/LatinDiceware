@@ -141,8 +141,8 @@ getPhraseLength <- function(passPhrase) {
 analyzePhrase <- function(passPhrase, phraseLength) {
   charEntropy <- (log(95)/log(2))
   phraseEntropy <- charEntropy * phraseLength
-  writeLines(paste('Your pass phrase has ', charEntropy, ' bits of entropy per character.'))
-  writeLines(paste('Your pass phrase has a total of ', phraseEntropy, ' bits of entropy.'))
+  writeLines(paste('Your pass phrase has ', charEntropy, ' bits of entropy per character,'))
+  writeLines(paste('for a total of ', phraseEntropy, ' bits.'))
   friends <- 2^phraseEntropy
   #writeLines(paste(entropy, ' other possible combinations share this entropy.'))
 }
